@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-A Responsive CSS</title>
+</head>
+<body>
+    <div class="header">
+        <h1>this is header</h1>
+    </div>
+    <div class="right">
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+    </div>
+    <div class="left">
+        this is left
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+        this is right zyron <br>
+    </div>
+    <div class="clear" style="clear: both;"></div>
+    <div class="footer">
+        this is footer
+    </div>   
+</body>
+</html>
+<style>
+body, html{
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    font-size: 10 vw;
+}
+.header, .footer {
+    background-color: rgb(210, 244, 150);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.right , .left{
+    float: left;
+    width: 50%;
+}
+.left{
+    background-color: beige;
+}
+.right{
+    background-color: blanchedalmond;
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .right, .left{
+        width: 100%;
+        float: none;
+        font-size:10vw ;
+    } 
+
+    h1{
+        font-size:15vw ;
+    }
+    .header{
+        background-color: black;
+        color: white;
+    }
+}
+      
+
+</style>
